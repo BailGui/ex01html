@@ -60,3 +60,32 @@ Pour voir si ça a fonctionné:
 git remote -v
 ```
 
+## Envoi du projet 
+
+```bash
+git push origin master
+```
+
+## Récupération du projet 
+
+Si on souhaite récupérer que le `.git`(donc l'historique sans les fichiers)
+
+```bash
+git fetch origin master 
+```
+Si on souhaite récupérer toute la branche `master`
+
+```bash 
+git pull origin master 
+```
+
+Si on souhaite récupérer toute la branche `master`
+
+```bash 
+git pull origin master
+```
+
+Si on a effectué des modifications en local non voulues ne permettant pas la récupération des fichiers (`merge error`).
+
+On peut utiliser un `git stash`pour faire une pseudo sauvegarde et revenir au dernier commit avant de refaire un `git pull`
+
